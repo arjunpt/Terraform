@@ -9,7 +9,7 @@ resource "aws_instance" "abhishek" {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "abhishek-s3-demo-xyz" # change this
+  bucket = "abhishek-s3-demo-xyz" # once the s3 bucket is created we have to create the backend.tf file
 }
 
 resource "aws_dynamodb_table" "terraform_lock" {
